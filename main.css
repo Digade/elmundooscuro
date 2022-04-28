@@ -156,9 +156,13 @@ footer {
 /* INICIO Sección del main de la página */
 /* ------------------------ */
 
+.infoback{
+    background-image: url(img/banner-con.jpg) ;
+}
+
 .infomain {
     
-    background-image: url(img/banner-con.jpg) ;
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
