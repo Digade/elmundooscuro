@@ -10,8 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- Mi css -->
     <link rel="stylesheet" href="main.css">
 
+
+
+    <!-- animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <title>El Mundo Oscuro</title>
@@ -19,9 +26,25 @@
 </head>
 
 <body>
-
+   
+    
       
-    <nav id="nav1" class="navmain contenedor">
+    <nav id="nav1" class="navmain contenedor p-3 bg-dark text-white">
+
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-white text-decoration-none dropdown-toggle" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="img/50pxlogo.png" />
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
+              <li><a class="dropdown-item active" href="#" aria-current="page">Overview</a></li>
+              <li><a class="dropdown-item" href="#">Inventory</a></li>
+              <li><a class="dropdown-item" href="#">Customers</a></li>
+              <li><a class="dropdown-item" href="#">Products</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Reports</a></li>
+              <li><a class="dropdown-item" href="#">Analytics</a></li>
+            </ul>
+        </div>
 
         <div class="logo">
 
@@ -75,7 +98,7 @@
 
     </nav>
 
-    <header class="slidermain">
+    <header class="slidermain " style="height: 80vh;">
             <br><br><h1 class="animate__animated animate__fadeInLeft">El Mundo <br>Oscuro</h1>
             <img class="sliderlinea animate__animated animate__flipInY" src="img/divsimple-blanco.svg" alt="" style="margin-bottom: 30px;">
             <h6 class="animate__animated animate__fadeInUp">Un juego de cartas de <br>Astucia, Estrategia y Suerte</h6><br><br>
@@ -180,6 +203,14 @@
 
 <script src="https://kit.fontawesome.com/73ff65874a.js" crossorigin="anonymous"></script>
 
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/bootstrap.js"> </script>
+
+<script src="js/bootstrap.esm.js"></script>
 
 <!-- ¡¡¡¡Esto es una prueba NO TOCAR!!!
 
