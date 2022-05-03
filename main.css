@@ -48,7 +48,7 @@ nav{
     grid-template-areas:
     "logo" 
     "menu" 
-    "social-media"
+    /* "social-media" */
     "slider"
     "main"
     "footer"
@@ -74,6 +74,7 @@ nav{
 .social-media {
     grid-area: social-media;
     margin-bottom: 25px;
+    visibility: hidden;
 }
 
 .slidermain {
@@ -89,7 +90,9 @@ footer {
 }
 /* FIN de grid */
 
-
+.botonh{
+    margin-top: 50px;
+}
 
 .navmain ul li a {
     
@@ -102,7 +105,9 @@ footer {
     
 }
 
-
+.navbar-nav{
+    margin-top: 50px;
+}
 
 /* --------------------------------------- */
 /* SLIDER MAIN DE TODAS LAS PÁGINAS */
@@ -634,7 +639,13 @@ header div{
 
 @media screen and (min-width: 768px){
     
+    .navbar-nav{
+        margin-top: 0px;
+    }
 
+    .botonh{
+        margin-top: 0px;
+    }
     
     .logo {
         
@@ -648,7 +659,8 @@ header div{
     
     .social-media {
         
-        margin-bottom: 0
+        margin-bottom: 0;
+        visibility: visible;
     }
     
     
