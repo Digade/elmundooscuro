@@ -64,6 +64,8 @@ nav{
     grid-area: logo;
     margin: 25px 0 25px 0;
     padding-left: 00px;
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
