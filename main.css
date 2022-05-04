@@ -39,7 +39,7 @@ nav{
     font-family: 'Play', sans-serif;
     font-size: large;
     font-weight: 500;
-    padding: 5px;   
+    padding: 20px;   
     position: sticky;
     top: 0; 
     
@@ -63,7 +63,7 @@ nav{
 .logo {
     grid-area: logo;
     margin: 25px 0 25px 0;
-    padding-left: 40px;
+    padding-left: 00px;
 }
 
 .menu {
