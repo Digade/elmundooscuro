@@ -62,7 +62,7 @@ nav{
 /* Para grid */
 .logo {
     grid-area: logo;
-    margin: 25px 0 25px 0;
+    margin: 5px 0 25px 0;
     padding-left: 00px;
     display: flex;
     justify-content: center;
@@ -93,7 +93,7 @@ footer {
 /* FIN de grid */
 
 .botonh{
-    margin-top: 50px;
+    margin-top: 00px;
 }
 
 .navmain ul li a {
