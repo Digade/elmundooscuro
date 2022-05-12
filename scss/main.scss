@@ -1,0 +1,769 @@
+* {
+
+    margin: 0px;
+
+} 
+
+nav{
+    z-index: 3;
+}
+
+.contenedor {
+
+    /* clases de flexbox */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap-reverse; */
+    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+
+
+
+
+
+.navmain {
+    background-color: black;
+    color: white;
+    image-orientation: inherit;
+    font-family: 'Play', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    padding: 20px;   
+    position: sticky;
+    top: 0; 
+    
+    /* Estilo grid */
+    display: grid;
+    grid-template-areas:
+    "logo" 
+    "menu" 
+    /* "social-media" */
+    "slider"
+    "main"
+    "footer"
+    ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+        ul {
+            
+            li {
+   
+        display: inline-block;
+        /* margin: 0 5px; */
+        text-align: center;
+                
+                a {
+                    
+                        display: inline-block;
+                        text-decoration: none;
+                    
+                }
+        
+            }
+        }
+
+}
+
+.navmain {
+    ul {
+        li {
+            a:hover, a:active {
+        text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px #4b4b4b, 0 0 50px white, 1px 1px 4px black;
+            }
+        }
+    }
+}
+
+/* Para grid */
+.logo {
+    grid-area: logo;
+    margin: 5px 0 25px 0;
+    padding-left: 00px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    grid-area: menu;
+    margin-bottom: 25px;
+}
+
+.social-media {
+    grid-area: social-media;
+    margin-bottom: 25px;
+    visibility: hidden;
+}
+
+.slidermain {
+    grid-area: slider;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+/* FIN de grid */
+
+.botonh{
+    margin-top: 00px;
+}
+
+
+
+
+    
+
+
+.navbar-nav{
+    margin-top: 50px;
+}
+
+/* --------------------------------------- */
+/* SLIDER MAIN DE TODAS LAS PÁGINAS */
+/* --------------------------------------- */
+
+.slidermain {
+    
+    background-image: url(img/banner.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    position: relative;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    image-orientation: inherit;
+    font-family: 'Play', sans-serif;
+
+        h1{
+        font-family: 'Philosopher', sans-serif;
+        font-size: 70px;
+        text-align: left;
+        line-height: 0.75;
+        text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px rgb(218, 194, 116), 0 0 50px black, 1px 1px 4px black;
+        margin: 50px 0px 50px 0px;
+        }
+
+        h6 {
+            font-family: 'Play', sans-serif;
+            font-size: 25px;
+            font-weight: 100;
+            text-align: left;
+            color: rgb(218, 194, 116);
+        }
+    
+}
+
+.sliderlinea {
+    width: 90%; 
+    height: 10px;
+}
+
+.videomain{
+    width: 100%;
+    height: 55.25vw;
+}
+
+/* ------------------------ */
+/* INICIO Sección del main de la página */
+/* ------------------------ */
+
+.infoback{
+    background-image: url(../img/banner-con.jpg) ;
+}
+
+.infomain {
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5px;
+    background-color: #e4e4e4;
+    display: grid;
+    
+            
+    
+    grid-column: 3fr;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start; 
+
+    /* grid-template-columns: 50px 80px 100px; */
+    /* grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 50px 150px 80px; */
+
+    /* grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer"
+    ; */
+
+    /* justify-items: flex-start; */
+    /* align-items: start; */
+
+    /* grid-gap: 1%; */
+    
+}
+
+.noti1 {
+    
+    width: 240px;
+    margin: 0 10px 0;
+    border: inset 1px rgb(218, 194, 116);
+    text-align: center;
+    background-color: white;
+
+    h4 {
+        margin: 20px 20px 30px 20px;
+        font-family: philosopher, serif;
+    
+    }
+
+    p {
+        margin: 30px 20px 40px 20px;
+        padding: 0px 10px 0px;
+        
+        text-align: center;
+    }
+
+}
+/* ------------------------ */
+/* FIN Sección del main de la página */
+/* ------------------------ */
+
+
+/* ------------------------ */
+/* Sección de "PAGINA: Cartas" */
+/* ------------------------ */
+
+
+.infomain-cartas {
+    
+    
+    background-color: #e4e4e4;
+    
+
+}
+
+.cont-pjs, .cont-pjs-k {
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 135vh;
+    position: relative;
+        /* padding: 100px; */
+    background-color: black;
+    
+    image-orientation: inherit;
+
+    
+        
+    
+}
+
+.linea{
+    width: 270px; ;
+    height: 10px; ;
+}
+
+.cont-pjs:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    
+  }
+
+
+/* INICIOI responsive para celu texto arriba e imagen abajo */
+
+$valores-salteados: j,k,"10-10",j-j,k-k;
+
+@each $valor in $valores-salteados{
+    .cont-pjs-#{$valor} {
+        flex-direction: column-reverse;    
+    }
+}
+
+
+/* FIN responsive para celu texto arriba e imagen abajo */
+
+/* INICIO colores de los fondos por personaje */
+
+$valores: (
+    10: radial-gradient(circle,rgb(86, 96, 150) 10%, #530a53, rgb(1, 0, 8) 70%),
+
+    j: radial-gradient(circle,rgb(51, 105, 136) 10%, #080053, rgb(1, 0, 8) 70%), 
+    
+    q-j: radial-gradient(circle,rgb(159, 73, 167), #530041, #160016 35%, rgb(1, 0, 8) 70%),
+    
+    k:  radial-gradient(circle,rgb(255, 27, 27), #530000, #000216 35%, rgb(1, 0, 8) 70%),
+    
+    a: radial-gradient(circle,rgb(185, 151, 0) 10%,  #580000 35%, black 70%),
+    
+    "10-10": radial-gradient(circle,rgb(179, 122, 0) 10%, #3f260e, black 70%),
+    
+    "10-10-b": radial-gradient(circle,rgb(122, 94, 33) 10%, #251505, black 70%) ,
+    
+    j-j: radial-gradient(circle,rgb(255, 0, 0),  #300000 35%, black 70%) ,
+    
+    q-q: radial-gradient(circle,rgb(255, 37, 102), #3f0000 35%, black 70%),
+    
+    k-k: radial-gradient(circle,rgb(197, 168, 0), #06002b 35%, black 70%),
+    
+    a-a: radial-gradient(circle,rgb(204, 122, 0),#0e0016 40%, rgb(2, 0, 8) 70%),
+    
+    );
+
+@each $valor, $color in $valores {
+    .cont-pjs-#{$valor}:before {
+        background-attachment: fixed;
+        background-image: $color;
+        opacity:.75;   
+    }
+}
+
+/* FIN colores de los fondos por personaje */
+
+.texto-pjs {
+    margin: 50px 30px 15px;
+    width: 300px;
+    color: white;
+    z-index: 2;
+
+    h5{
+        width: 300px;
+        
+    }
+    
+    h6, h5, p {
+        margin: 0px;
+        
+    }
+    
+}
+
+
+
+.img-pjs {
+    margin-right: 25px;
+    margin-left: 25px;
+    z-index: 2;
+    
+    
+}
+
+
+
+
+
+/* GIRAR CONTENEDORES TUTORIAL */
+
+.tut1{
+    flex-direction: column-reverse;
+}
+
+/*FIN CONTENEDORES TUTORIAL*/
+
+
+/* ------------------------ */
+/* MAIN CONTACTO */
+/* ------------------------ */
+
+.contactomain {
+    background-color: black;
+    color: white;
+    image-orientation: inherit;
+    font-family: 'Play', sans-serif;
+
+    ul{ 
+        li{
+             a  {
+    
+                text-decoration: none;
+               
+             }
+        }
+    }
+
+}
+
+.contactomain {
+
+    ul{ 
+        li{
+             a:hover, a:active  {
+                color:rgb(218, 194, 116);
+             }
+        }
+    }
+
+}
+
+.formulario {
+    margin: 50px 25px 50px 25px;
+}
+
+.datocont {
+    margin: 50px 25px 50px 25px;
+}
+
+.ayudacont {
+    margin: 50px 25px 0px 25px;
+
+    h6{
+        color: rgb(218, 194, 116);
+        text-shadow: 3px 1px 3px black, 1px 1px 2px black, 0 0 25px black, 0 0 5px grey;
+    }
+}
+
+.h4form {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+.cont2{
+    color:white;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    text-align: center !important;
+
+    p{
+        text-align: center !important;
+    }
+}
+
+
+
+/* ------------------------ */
+/* FOOTER */
+/* ------------------------ */
+
+.footer-nav {
+
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+        /* padding: 100px; */
+        
+    
+}
+
+.footer-list {
+    
+    margin-bottom: 100px;
+    p{
+        color: rgb(218, 194, 116);
+    }
+    a:hover{
+        color: rgb(218, 194, 116);
+    }
+}
+
+
+
+.ul-footer {
+    margin-top: 100px;
+}
+
+/* ------------------------ */
+/* ------------------------ */
+/* ------------------------ */
+/* SELECTORES generales de la página 0-0-1 */
+/* ------------------------ */
+/* ------------------------ */
+/* ------------------------ */
+img {
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: .5s;
+    transition-timing-function: ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+label {
+    font-family: 'Play', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: left;
+}
+
+input {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: left;
+}
+
+p {
+    font-family: 'Play', sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    text-align: left;
+}
+
+h6 {
+    font-family: 'Play', sans-serif;
+    font-size: 25px;
+    margin: 0px;
+}
+
+h5 {
+    font-family: 'Play', sans-serif;
+    font-size: 45px;
+}
+
+h4 {
+    font-family: 'Play', sans-serif;
+    font-size: 55px;
+    margin:0px;
+
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: .5s;
+    transition-timing-function: ease;
+}
+
+h3 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 70px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 80px;
+}
+
+h1 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 90px;
+    margin: 0px;
+}
+
+a{
+    color: white;
+    font-family: 'Play', sans-serif;
+}
+
+ul {
+    margin: 0px;
+    display: inline-block;
+    li {
+   
+        display: block;
+        /* margin: 0 5px; */
+        
+        
+    }
+}
+
+
+nav {
+    ul{ 
+        li {
+   
+    display: block;
+    margin: 0 10px;
+        }
+    }
+    
+    
+}
+
+header {
+    div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+}
+
+@media screen and (max-width: 415px){
+    
+    .pj-cel{
+        visibility: visible;
+}
+
+    .pj-pc {
+        visibility: hidden;
+    }
+}
+
+
+
+@media screen and (min-width: 768px){
+    
+    .pj-cel{
+        visibility: hidden;
+}
+
+    .pj-pc {
+        visibility: visible;
+    }
+
+    .navbar-brand {
+        
+        margin-right: 3rem;
+    }
+
+    .navbar-nav{
+        margin-top: 0px;
+    }
+
+    .botonh{
+        margin-top: 0px;
+        
+    }
+    
+    .logo {
+        
+        margin: 0;
+    }
+    
+    .menu {
+        
+        margin-bottom: 0;
+    }
+    
+    .social-media {
+        
+        margin-bottom: 0;
+        visibility: visible;
+    }
+    
+    
+    .slidermain {
+    
+        height: 60vh;
+        padding: 100px;
+       
+        font-family: 'Play', sans-serif;
+        h1 {
+        
+            font-size: 100px;
+            
+            line-height: 0.75;
+            
+            margin: 50px 0px 50px 0px;
+            
+        }
+        h6 {
+        
+            font-size: 35px;
+            
+            
+            
+        }
+    }
+
+
+    .sliderlinea {
+        width: 450px; 
+        height: 10px;
+        
+    }
+
+    .navmain {
+    grid-template-areas:
+    "logo menu social-media"
+    "slider slider slider"
+    "main main main"
+    "footer footer footer"
+    ;
+    }
+    
+  
+
+
+    .infomain {
+    
+        height:100vh;    
+        display: grid;
+        grid-template-columns: min-content min-content min-content;
+        align-self: center;
+        align-items: center;
+        
+                
+    }
+
+    .cont-pjs, .cont-pjs-k {
+
+        flex-direction: row;
+        height: 50vh;
+        justify-content: center;
+    }
+
+ 
+
+    .linea{
+        width: 90%; 
+        height: 90%;
+    }
+
+    .texto-pjs{
+        margin: 0 50px 0;
+        width: 400px;
+    }
+
+    .ayudacont{
+        margin: 0 25px 0;
+        h6{
+            color: rgb(218, 194, 116);
+            text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px grey;
+        }
+    }
+
+    
+
+    .cont2{
+        
+        flex-direction: row;
+        
+    }
+
+
+}
+
