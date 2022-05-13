@@ -4,6 +4,25 @@
 
 } 
 
+.font-play{
+    font-family: 'Play', sans-serif;
+    font-weight: 200;
+}
+
+.font-philo{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.color-sec{
+     color: rgb(218, 194, 116);
+}
+
+@mixin flexrow-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 nav{
     z-index: 3;
 }
@@ -11,9 +30,7 @@ nav{
 .contenedor {
 
     /* clases de flexbox */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flexrow-center;
     /* flex-wrap: wrap; */
     /* flex-flow: row wrap-reverse; */
     /* justify-content: space-evenly; */
@@ -22,15 +39,11 @@ nav{
 }
 
 
-
-
-
-
 .navmain {
     background-color: black;
     color: white;
     image-orientation: inherit;
-    font-family: 'Play', sans-serif;
+    @extend .font-play;
     font-size: large;
     font-weight: 500;
     padding: 20px;   
@@ -148,7 +161,7 @@ footer {
     font-family: 'Play', sans-serif;
 
         h1{
-        font-family: 'Philosopher', sans-serif;
+        @extend .font-philo;
         font-size: 70px;
         text-align: left;
         line-height: 0.75;
@@ -157,11 +170,11 @@ footer {
         }
 
         h6 {
-            font-family: 'Play', sans-serif;
+            @extend .font-play;
             font-size: 25px;
             font-weight: 100;
             text-align: left;
-            color: rgb(218, 194, 116);
+            @extend .color-sec;
         }
     
 }
@@ -229,7 +242,7 @@ footer {
 
     h4 {
         margin: 20px 20px 30px 20px;
-        font-family: philosopher, serif;
+        @extend .font-philo;
     
     }
 
@@ -400,7 +413,7 @@ $valores: (
     background-color: black;
     color: white;
     image-orientation: inherit;
-    font-family: 'Play', sans-serif;
+    @extend .font-play;
 
     ul{ 
         li{
@@ -419,32 +432,36 @@ $valores: (
     ul{ 
         li{
              a:hover, a:active  {
-                color:rgb(218, 194, 116);
+                @extend .color-sec;
              }
         }
     }
 
 }
 
-.formulario {
+@mixin margin-cont {
     margin: 50px 25px 50px 25px;
 }
 
+.formulario {
+    @include margin-cont;
+}
+
 .datocont {
-    margin: 50px 25px 50px 25px;
+    @include margin-cont;
 }
 
 .ayudacont {
     margin: 50px 25px 0px 25px;
 
     h6{
-        color: rgb(218, 194, 116);
+        @extend .color-sec;
         text-shadow: 3px 1px 3px black, 1px 1px 2px black, 0 0 25px black, 0 0 5px grey;
     }
 }
 
 .h4form {
-    font-family: 'Philosopher', sans-serif;
+    @extend .font-philo;
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -492,10 +509,10 @@ $valores: (
     
     margin-bottom: 100px;
     p{
-        color: rgb(218, 194, 116);
+        @extend .color-sec;
     }
     a:hover{
-        color: rgb(218, 194, 116);
+        @extend .color-sec;
     }
 }
 
@@ -524,39 +541,37 @@ img:hover {
 }
 
 label {
-    font-family: 'Play', sans-serif;
+    @extend .font-play;
     font-size: 12px;
-    font-weight: 200;
     text-align: left;
 }
 
 input {
-    font-family: 'Philosopher', sans-serif;
+    @extend .font-philo;
     font-size: 16px;
     font-weight: 800;
     text-align: left;
 }
 
 p {
-    font-family: 'Play', sans-serif;
+    @extend .font-play;
     font-size: 17px;
-    font-weight: 200;
     text-align: left;
 }
 
 h6 {
-    font-family: 'Play', sans-serif;
+    @extend .font-play;
     font-size: 25px;
     margin: 0px;
 }
 
 h5 {
-    font-family: 'Play', sans-serif;
+    @extend .font-play;
     font-size: 45px;
 }
 
 h4 {
-    font-family: 'Play', sans-serif;
+    @extend .font-play;
     font-size: 55px;
     margin:0px;
 
@@ -567,18 +582,18 @@ h4 {
 }
 
 h3 {
-    font-family: 'Philosopher', sans-serif;
+    @extend .font-philo;
     font-size: 70px;
     margin: 0px;
 }
 
 h2 {
-    font-family: 'Philosopher', sans-serif;
+    @extend .font-philo;
     font-size: 80px;
 }
 
 h1 {
-    font-family: 'Philosopher', sans-serif;
+    @extend .font-philo;
     font-size: 90px;
     margin: 0px;
 }
@@ -615,9 +630,7 @@ nav {
 
 header {
     div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flexrow-center;
     }
 }
 
@@ -678,9 +691,9 @@ header {
     .slidermain {
     
         height: 60vh;
-        padding: 100px;
-       
+        padding: 100px;       
         font-family: 'Play', sans-serif;
+
         h1 {
         
             font-size: 100px;
@@ -751,7 +764,7 @@ header {
     .ayudacont{
         margin: 0 25px 0;
         h6{
-            color: rgb(218, 194, 116);
+            color: #dac274;
             text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px grey;
         }
     }

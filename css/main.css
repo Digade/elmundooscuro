@@ -2,6 +2,16 @@
 * {
   margin: 0px; }
 
+.font-play, .navmain, .slidermain h6, .contactomain, label, p, h6, h5, h4 {
+  font-family: 'Play', sans-serif;
+  font-weight: 200; }
+
+.font-philo, .slidermain h1, .noti1 h4, .h4form, input, h3, h2, h1 {
+  font-family: 'Philosopher', sans-serif; }
+
+.color-sec, .slidermain h6, .contactomain ul li a:hover, .contactomain ul li a:active, .ayudacont h6, .footer-list p, .footer-list a:hover {
+  color: #dac274; }
+
 nav {
   z-index: 3; }
 
@@ -20,7 +30,6 @@ nav {
   background-color: black;
   color: white;
   image-orientation: inherit;
-  font-family: 'Play', sans-serif;
   font-size: large;
   font-weight: 500;
   padding: 20px;
@@ -93,18 +102,15 @@ footer {
   image-orientation: inherit;
   font-family: 'Play', sans-serif; }
   .slidermain h1 {
-    font-family: 'Philosopher', sans-serif;
     font-size: 70px;
     text-align: left;
     line-height: 0.75;
     text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px #dac274, 0 0 50px black, 1px 1px 4px black;
     margin: 50px 0px 50px 0px; }
   .slidermain h6 {
-    font-family: 'Play', sans-serif;
     font-size: 25px;
     font-weight: 100;
-    text-align: left;
-    color: #dac274; }
+    text-align: left; }
 
 .sliderlinea {
   width: 90%;
@@ -151,8 +157,7 @@ footer {
   text-align: center;
   background-color: white; }
   .noti1 h4 {
-    margin: 20px 20px 30px 20px;
-    font-family: philosopher, serif; }
+    margin: 20px 20px 30px 20px; }
   .noti1 p {
     margin: 30px 20px 40px 20px;
     padding: 0px 10px 0px;
@@ -295,13 +300,9 @@ footer {
 .contactomain {
   background-color: black;
   color: white;
-  image-orientation: inherit;
-  font-family: 'Play', sans-serif; }
+  image-orientation: inherit; }
   .contactomain ul li a {
     text-decoration: none; }
-
-.contactomain ul li a:hover, .contactomain ul li a:active {
-  color: #dac274; }
 
 .formulario {
   margin: 50px 25px 50px 25px; }
@@ -312,11 +313,9 @@ footer {
 .ayudacont {
   margin: 50px 25px 0px 25px; }
   .ayudacont h6 {
-    color: #dac274;
     text-shadow: 3px 1px 3px black, 1px 1px 2px black, 0 0 25px black, 0 0 5px grey; }
 
 .h4form {
-  font-family: 'Philosopher', sans-serif;
   font-size: 40px;
   margin-bottom: 20px; }
 
@@ -346,10 +345,6 @@ footer {
 
 .footer-list {
   margin-bottom: 100px; }
-  .footer-list p {
-    color: #dac274; }
-  .footer-list a:hover {
-    color: #dac274; }
 
 .ul-footer {
   margin-top: 100px; }
@@ -371,34 +366,26 @@ img:hover {
   transform: scale(1.05); }
 
 label {
-  font-family: 'Play', sans-serif;
   font-size: 12px;
-  font-weight: 200;
   text-align: left; }
 
 input {
-  font-family: 'Philosopher', sans-serif;
   font-size: 16px;
   font-weight: 800;
   text-align: left; }
 
 p {
-  font-family: 'Play', sans-serif;
   font-size: 17px;
-  font-weight: 200;
   text-align: left; }
 
 h6 {
-  font-family: 'Play', sans-serif;
   font-size: 25px;
   margin: 0px; }
 
 h5 {
-  font-family: 'Play', sans-serif;
   font-size: 45px; }
 
 h4 {
-  font-family: 'Play', sans-serif;
   font-size: 55px;
   margin: 0px;
   transition-property: all;
@@ -407,16 +394,13 @@ h4 {
   transition-timing-function: ease; }
 
 h3 {
-  font-family: 'Philosopher', sans-serif;
   font-size: 70px;
   margin: 0px; }
 
 h2 {
-  font-family: 'Philosopher', sans-serif;
   font-size: 80px; }
 
 h1 {
-  font-family: 'Philosopher', sans-serif;
   font-size: 90px;
   margin: 0px; }
 
