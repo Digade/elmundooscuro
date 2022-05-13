@@ -89,7 +89,7 @@ footer {
 /* SLIDER MAIN DE TODAS LAS PÁGINAS */
 /* --------------------------------------- */
 .slidermain {
-  background-image: url(img/banner.jpg);
+  background-image: url(../img/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
