@@ -2,7 +2,15 @@
 
     margin: 0px;
 
-} 
+}
+
+.display-cel{
+display: none;
+}
+
+// .display-pc{
+//     display: none;
+//     }
 
 .font-play{
     font-family: 'Play', sans-serif;
@@ -372,9 +380,13 @@ $valores: (
 
     h5{
         width: 300px;
-        
+        font-weight: 800;
     }
     
+    h6{
+        font-weight: 800;
+    }
+
     h6, h5, p {
         margin: 0px;
         
@@ -635,13 +647,10 @@ header {
 }
 
 @media screen and (max-width: 415px){
-    
-    .pj-cel{
-        visibility: visible;
-}
+   
 
     .pj-pc {
-        visibility: hidden;
+        display:none;
     }
 }
 
@@ -650,12 +659,10 @@ header {
 @media screen and (min-width: 768px){
     
     .pj-cel{
-        visibility: hidden;
+        display:none;
 }
 
-    .pj-pc {
-        visibility: visible;
-    }
+
 
     .navbar-brand {
         

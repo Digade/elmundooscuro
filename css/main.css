@@ -2,6 +2,9 @@
 * {
   margin: 0px; }
 
+.display-cel {
+  display: none; }
+
 .font-play, .navmain, .slidermain h6, .contactomain, label, p, h6, h5, h4 {
   font-family: 'Play', sans-serif;
   font-weight: 200; }
@@ -280,7 +283,10 @@ footer {
   color: white;
   z-index: 2; }
   .texto-pjs h5 {
-    width: 300px; }
+    width: 300px;
+    font-weight: 800; }
+  .texto-pjs h6 {
+    font-weight: 800; }
   .texto-pjs h6, .texto-pjs h5, .texto-pjs p {
     margin: 0px; }
 
@@ -425,16 +431,12 @@ header div {
   align-items: center; }
 
 @media screen and (max-width: 415px) {
-  .pj-cel {
-    visibility: visible; }
   .pj-pc {
-    visibility: hidden; } }
+    display: none; } }
 
 @media screen and (min-width: 768px) {
   .pj-cel {
-    visibility: hidden; }
-  .pj-pc {
-    visibility: visible; }
+    display: none; }
   .navbar-brand {
     margin-right: 3rem; }
   .navbar-nav {
