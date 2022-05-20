@@ -129,6 +129,16 @@ footer {
 .infoback {
   background-image: url(../img/banner-con.jpg); }
 
+.infoback-pag {
+  background-image: url(../img/banner-con.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
+.info-title-pag {
+  text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px #4b4b4b, 0 0 50px white, 1px 1px 4px black; }
+
 .infomain {
   background-size: cover;
   background-repeat: no-repeat;
