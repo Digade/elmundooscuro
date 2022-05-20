@@ -478,6 +478,8 @@ header div {
     height: 10px; }
   .navmain {
     grid-template-areas: "logo menu social-media" "slider slider slider" "main main main" "footer footer footer"; }
+  main .infoback-pag {
+    height: 100vh; }
   .infomain {
     height: 100vh;
     display: grid;
