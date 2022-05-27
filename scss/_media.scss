@@ -1,0 +1,167 @@
+
+@media screen and (max-width: 415px){
+   
+
+    .pj-pc {
+        display:none;
+    }
+
+    .infomain {
+    
+        padding: 60px 0 60px 0;
+        
+        div{
+            margin: 10px 0 10px 0;
+        }                
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 768px){
+    
+    .pj-cel{
+        display:none;
+}
+
+
+
+    .navbar-brand {
+        
+        margin-right: 3rem;
+    }
+
+    .navbar-nav{
+        margin-top: 0px;
+    }
+
+    .botonh{
+        margin-top: 0px;
+        
+    }
+    
+    .logo {
+        
+        margin: 0;
+    }
+    
+    .menu {
+        
+        margin-bottom: 0;
+    }
+    
+    .social-media {
+        
+        margin-bottom: 0;
+        visibility: visible;
+    }
+    
+    
+    .slidermain {
+    
+        height: 60vh;
+        padding: 100px;       
+        font-family: 'Play', sans-serif;
+
+        h1 {
+        
+            font-size: 100px;
+            
+            line-height: 0.75;
+            
+            margin: 50px 0px 50px 0px;
+            
+        }
+        h6 {
+        
+            font-size: 35px;
+            
+            
+            
+        }
+    }
+
+
+    .sliderlinea {
+        width: 450px; 
+        height: 10px;
+        
+    }
+
+    .navmain {
+    grid-template-areas:
+    "logo menu social-media"
+    "slider slider slider"
+    "main main main"
+    "footer footer footer"
+    ;
+    }
+    
+    main{
+    .infoback-pag{
+        padding: 150px 0 150px 0;
+    }
+    }
+
+    .infomain {
+    
+        height:100vh;    
+        display: grid;
+        grid-template-columns: min-content min-content min-content;
+        align-self: center;
+        align-items: center;
+        
+                
+    }
+
+    .cont-pjs, .cont-pjs-k {
+
+        flex-direction: row;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        align-content: center;
+    }
+
+ 
+
+    .linea{
+        width: 90%; 
+        height: 90%;
+    }
+
+    .linea-titulo{
+        width: 90%; 
+        height: 20%;
+    }
+
+    .texto-titulo {
+        width: 600px;
+    }
+
+    .texto-pjs{
+        margin: 0 50px 0;
+        width: 400px;
+    }
+
+    .ayudacont{
+        margin: 0 25px 0;
+        h6{
+            color: #dac274;
+            text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px grey;
+        }
+    }
+
+    
+
+    .cont2{
+        
+        flex-direction: row;
+        
+    }
+
+
+}

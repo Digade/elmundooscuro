@@ -1,0 +1,52 @@
+.slidermain {
+    grid-area: slider;
+}
+
+
+/* --------------------------------------- */
+/* SLIDER MAIN DE TODAS LAS PÁGINAS */
+/* --------------------------------------- */
+
+.slidermain {
+    
+    background-image: url(../img/banner.webp) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    position: relative;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    image-orientation: inherit;
+    font-family: 'Play', sans-serif;
+
+        h1{
+        @extend .font-philo;
+        font-size: 70px;
+        text-align: left;
+        line-height: 0.75;
+        text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px rgb(218, 194, 116), 0 0 50px black, 1px 1px 4px black;
+        margin: 50px 0px 50px 0px;
+        }
+
+        h6 {
+            @extend .font-play;
+            font-size: 25px;
+            font-weight: 100;
+            text-align: left;
+            @extend .color-sec;
+        }
+    
+}
+
+.sliderlinea {
+    width: 90%; 
+    height: 10px;
+}
+
+.videomain{
+    width: 100%;
+    height: 55.25vw;
+}

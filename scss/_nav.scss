@@ -1,0 +1,97 @@
+
+nav{
+    z-index: 3;
+}
+
+.contenedor {
+
+    /* clases de flexbox */
+    @include flexrow-center;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap-reverse; */
+    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+
+.navmain {
+    background-color: black;
+    color: white;
+    image-orientation: inherit;
+    @extend .font-play;
+    font-size: large;
+    font-weight: 500;
+    padding: 20px;   
+    position: sticky;
+    top: 0; 
+    
+    /* Estilo grid */
+    display: grid;
+    grid-template-areas:
+    "logo" 
+    "menu" 
+    /* "social-media" */
+    "slider"
+    "main"
+    "footer"
+    ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+        ul {
+            
+            li {
+   
+        display: inline-block;
+        /* margin: 0 5px; */
+        text-align: center;
+                
+                a {
+                    
+                        display: inline-block;
+                        text-decoration: none;
+                    
+                }
+        
+            }
+        }
+
+}
+
+.navmain {
+    ul {
+        li {
+            a:hover, a:active {
+        text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px #4b4b4b, 0 0 50px white, 1px 1px 4px black;
+            }
+        }
+    }
+}
+
+/* Para grid */
+.logo {
+    grid-area: logo;
+    margin: 5px 0 25px 0;
+    padding-left: 00px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    grid-area: menu;
+    margin-bottom: 25px;
+}
+
+.social-media {
+    grid-area: social-media;
+    margin-bottom: 25px;
+    visibility: hidden;
+}
+
+
+ 
+.navbar-nav{
+    margin-top: 50px;
+}

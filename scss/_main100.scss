@@ -1,0 +1,315 @@
+
+main {
+    grid-area: main;
+}
+
+/* ------------------------ */
+/* INICIO Sección del main de la página */
+/* ------------------------ */
+
+.infoback{
+    background-image: url(../img/banner-con.webp) ;
+}
+
+.infoback-pag{
+    background-image: url(../img/banner-con.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.info-title-pag{
+    text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px #4b4b4b, 0 0 50px white, 1px 1px 4px black;    
+}
+
+.infomain {
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 5px;
+    background-color: #e4e4e4;
+    display: grid;
+    
+            
+    
+    grid-column: 3fr;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start; 
+
+    /* grid-template-columns: 50px 80px 100px; */
+    /* grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 50px 150px 80px; */
+
+    /* grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer"
+    ; */
+
+    /* justify-items: flex-start; */
+    /* align-items: start; */
+
+    /* grid-gap: 1%; */
+    
+}
+
+.noti1 {
+    
+    width: 240px;
+    margin: 0 10px 0;
+    border: inset 1px rgb(218, 194, 116);
+    text-align: center;
+    background-color: white;
+
+    h4 {
+        margin: 20px 20px 30px 20px;
+        @extend .font-philo;
+    
+    }
+
+    p {
+        margin: 30px 20px 40px 20px;
+        padding: 0px 10px 0px;
+        
+        text-align: center;
+    }
+
+}
+/* ------------------------ */
+/* FIN Sección del main de la página */
+/* ------------------------ */
+
+
+/* ------------------------ */
+/* Sección de "PAGINA: Cartas" */
+/* ------------------------ */
+
+
+.infomain-cartas {
+    
+    
+    background-color: #e4e4e4;
+    
+
+}
+
+.cont-pjs, .cont-pjs-k {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    // height: 135vh;
+    position: relative;
+    /* padding: 100px; */
+    background-color: black;
+    image-orientation: inherit; 
+  }
+  
+  .cont-text-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    align-content: center;
+   
+  }
+
+.linea{
+    width: 270px; ;
+    height: 10px; ;
+}
+
+.cont-pjs:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    
+  }
+
+
+/* INICIOI responsive para celu texto arriba e imagen abajo */
+
+$valores-salteados: j,k,"10-10",j-j,k-k;
+
+@each $valor in $valores-salteados{
+    .cont-pjs-#{$valor} {
+        flex-direction: column-reverse;    
+    }
+}
+
+
+/* FIN responsive para celu texto arriba e imagen abajo */
+
+/* INICIO colores de los fondos por personaje */
+
+$valores: (
+    10: radial-gradient(circle,rgb(86, 96, 150) 10%, #530a53, rgb(1, 0, 8) 70%),
+
+    j: radial-gradient(circle,rgb(51, 105, 136) 10%, #080053, rgb(1, 0, 8) 70%), 
+    
+    q-j: radial-gradient(circle,rgb(159, 73, 167), #530041, #160016 35%, rgb(1, 0, 8) 70%),
+    
+    k:  radial-gradient(circle,rgb(255, 27, 27), #530000, #000216 35%, rgb(1, 0, 8) 70%),
+    
+    a: radial-gradient(circle,rgb(185, 151, 0) 10%,  #580000 35%, black 70%),
+    
+    "10-10": radial-gradient(circle,rgb(179, 122, 0) 10%, #3f260e, black 70%),
+    
+    "10-10-b": radial-gradient(circle,rgb(122, 94, 33) 10%, #251505, black 70%) ,
+    
+    j-j: radial-gradient(circle,rgb(255, 0, 0),  #300000 35%, black 70%) ,
+    
+    q-q: radial-gradient(circle,rgb(255, 37, 102), #3f0000 35%, black 70%),
+    
+    k-k: radial-gradient(circle,rgb(197, 168, 0), #06002b 35%, black 70%),
+    
+    a-a: radial-gradient(circle,rgb(204, 122, 0),#0e0016 40%, rgb(2, 0, 8) 70%),
+    
+    );
+
+@each $valor, $color in $valores {
+    .cont-pjs-#{$valor}:before {
+        background-attachment: fixed;
+        background-image: $color;
+        opacity:.75;   
+    }
+}
+
+/* FIN colores de los fondos por personaje */
+
+.texto-pjs {
+    margin: 50px 30px 15px;
+    width: 300px;
+    color: white;
+    z-index: 2;
+
+    h5{
+        width: 300px;
+        font-weight: 800;
+    }
+    
+    h6{
+        font-weight: 800;
+    }
+
+    h6, h5, p {
+        margin: 0px;
+        
+    }
+    
+}
+
+
+
+.img-pjs {
+    margin-right: 25px;
+    margin-left: 25px;
+    z-index: 2;
+    
+    
+}
+
+
+
+
+
+/* GIRAR CONTENEDORES TUTORIAL */
+
+.tut1{
+    flex-direction: column-reverse;
+}
+
+/*FIN CONTENEDORES TUTORIAL*/
+
+
+/* ------------------------ */
+/* MAIN CONTACTO */
+/* ------------------------ */
+
+.contactomain {
+    background-color: black;
+    color: white;
+    image-orientation: inherit;
+    @extend .font-play;
+
+    ul{ 
+        li{
+             a  {
+    
+                text-decoration: none;
+               
+             }
+        }
+    }
+
+}
+
+.contactomain {
+
+    ul{ 
+        li{
+             a:hover, a:active  {
+                @extend .color-sec;
+             }
+        }
+    }
+
+}
+
+@mixin margin-cont {
+    margin: 50px 25px 50px 25px;
+}
+
+.formulario {
+    @include margin-cont;
+}
+
+.datocont {
+    @include margin-cont;
+}
+
+.ayudacont {
+    margin: 50px 25px 0px 25px;
+
+    h6{
+        @extend .color-sec;
+        text-shadow: 3px 1px 3px black, 1px 1px 2px black, 0 0 25px black, 0 0 5px grey;
+    }
+}
+
+.h4form {
+    @extend .font-philo;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+
+.cont2{
+    color:white;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    text-align: center !important;
+
+    p{
+        text-align: center !important;
+    }
+}
+
