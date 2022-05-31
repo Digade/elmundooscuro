@@ -90,6 +90,15 @@ h3 {
     margin: 0px;
 }
 
+.slidermain{
+    h2 {
+        @extend .font-play;
+        font-size: 40px;
+        margin: 0px;
+        color: rgb(218, 194, 116);
+    }
+}
+
 h2 {
     @extend .font-philo;
     font-size: 80px;

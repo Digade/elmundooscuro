@@ -5,7 +5,7 @@
 .display-cel {
   display: none; }
 
-.font-play, label, p, h6, h5, h4, .navmain, .slidermain h6, .contactomain {
+.font-play, label, p, h6, h5, h4, .slidermain h2, .navmain, .slidermain h6, .contactomain {
   font-family: 'Play', sans-serif;
   font-weight: 200; }
 
@@ -58,6 +58,11 @@ h4 {
 h3 {
   font-size: 70px;
   margin: 0px; }
+
+.slidermain h2 {
+  font-size: 40px;
+  margin: 0px;
+  color: #dac274; }
 
 h2 {
   font-size: 80px; }
