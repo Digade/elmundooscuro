@@ -90,6 +90,15 @@ h3 {
     margin: 0px;
 }
 
+.card-body{
+    h3{
+    @extend .font-play;
+    font-size: 40px;
+    font-weight: 900;
+
+    }
+}
+
 .slidermain{
     h2 {
         @extend .font-play;
