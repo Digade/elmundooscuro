@@ -214,11 +214,23 @@ nav {
   --eeveefront: url(../img/cartasibila.png);
   --mewtwo1: #efb2fb;
   --mewtwo2: #acc6f8;
-  --mewtwofront: url(../img/cartabruja.png); }
+  --mewtwofront: url(../img/cartabruja.png);
+  --bufon1: rgb(173, 255, 170);
+  --bufon2: #d49bee;
+  --bufonfront: url(../img/cartabufon.png);
+  --gangster1: #54a29e;
+  --gangster2: #66a3a7;
+  --gangsterfront: url(../img/cartagangster.png);
+  --sibila1: #fbb2df;
+  --sibila2: #daacf8;
+  --sibilafront: url(../img/cartasibila.png);
+  --bruja1: #fbb2be;
+  --bruja2: #dcacf8;
+  --brujafront: url(../img/cartabruja.png); }
 
 .card2 {
-  width: 71.5vw;
-  height: 100vw;
+  width: 61vw;
+  height: 85vw;
   position: relative;
   overflow: hidden;
   margin: 20px;
@@ -237,8 +249,8 @@ nav {
   transform-origin: center; }
   @media screen and (min-width: 600px) {
     .card2 {
-      width: clamp(12.9vw, 61vh, 18vw);
-      height: clamp(18vw, 85vh, 25.2vw); } }
+      max-width: 215px;
+      max-height: 301px; } }
 
 .card2:hover {
   box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5); }
@@ -261,10 +273,27 @@ nav {
 .card2.eevee {
   --color1: #ec9bb6;
   --color2: #ccac6f;
-  --color3: #69e4a5;
-  --color4: #8ec5d6;
-  --color5: #b98cce;
   --front: var(--eeveefront); }
+
+.card2.bufon {
+  --color1: var(--bufon1);
+  --color2: var(--bufon2);
+  --front: var(--bufonfront); }
+
+.card2.gangster {
+  --color1: var(--gangster1);
+  --color2: var(--gangster2);
+  --front: var(--gangsterfront); }
+
+.card2.sibila {
+  --color1: var(--sibila1);
+  --color2: var(--sibila2);
+  --front: var(--sibilafront); }
+
+.card2.bruja {
+  --color1: var(--bruja1);
+  --color2: var(--bruja2);
+  --front: var(--brujafront); }
 
 .card2:before,
 .card2:after {
@@ -275,7 +304,7 @@ nav {
   bottom: 0;
   top: 0;
   background-repeat: no-repeat;
-  opacity: .5;
+  opacity: .4;
   mix-blend-mode: color-dodge;
   transition: all .33s ease; }
 
@@ -283,8 +312,8 @@ nav {
   background-position: 50% 50%;
   background-size: 300% 300%;
   background-image: linear-gradient(115deg, transparent 0%, var(--color1) 25%, transparent 47%, transparent 53%, var(--color2) 75%, transparent 100%);
-  opacity: .5;
-  filter: brightness(0.5) contrast(1);
+  opacity: .7;
+  filter: brightness(0.3) contrast(1);
   z-index: 1; }
 
 .card2:after {
@@ -315,7 +344,7 @@ nav {
   background-image: linear-gradient(110deg, transparent 25%, var(--color1) 48%, var(--color2) 52%, transparent 75%);
   background-position: 50% 50%;
   background-size: 250% 250%;
-  opacity: .88;
+  opacity: .40;
   filter: brightness(0.66) contrast(1.33);
   transition: none; }
 
@@ -390,13 +419,6 @@ nav {
     transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg); }
   55% {
     transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg); } }
-
-.card2.eevee:hover {
-  box-shadow: 0 0 30px -5px white, 0 0 10px -2px white, 0 55px 35px -20px rgba(0, 0, 0, 0.5); }
-
-.card2.eevee:hover:before,
-.card2.eevee.active:before {
-  background-image: linear-gradient(115deg, transparent 20%, var(--color1) 36%, var(--color2) 43%, var(--color3) 50%, var(--color4) 57%, var(--color5) 64%, transparent 80%); }
 
 .demo .card2 {
   background-image: var(--back);
