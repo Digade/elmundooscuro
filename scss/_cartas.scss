@@ -18,7 +18,7 @@
   
   
   
-  .card {
+  .card2 {
   
     width: 71.5vw;
     height: 100vw;
@@ -61,7 +61,7 @@
     
   }
   
-  .card:hover {
+  .card2:hover {
     box-shadow: 
       -20px -20px 30px -25px var(--color1), 
       20px 20px 30px -25px var(--color2), 
@@ -71,22 +71,22 @@
       0 55px 35px -20px rgba(0, 0, 0, 0.5);
   }
   
-  .card.charizard {
+  .card2.charizard {
     --color1: var(--charizard1);
     --color2: var(--charizard2);
     --front: var(--charizardfront);
   }
-  .card.pika {
+  .card2.pika {
     --color1: var(--pika1);
     --color2: var(--pika2);
     --front: var(--pikafront);
   }
-  .card.mewtwo {
+  .card2.mewtwo {
     --color1: var(--mewtwo1);
     --color2: var(--mewtwo2);
     --front: var(--mewtwofront);
   }
-  .card.eevee {
+  .card2.eevee {
     --color1: #ec9bb6;
     --color2: #ccac6f;
     --color3: #69e4a5;
@@ -95,8 +95,8 @@
     --front: var(--eeveefront);
   }
   
-  .card:before,
-  .card:after {
+  .card2:before,
+  .card2:after {
     content: "";
     position: absolute;
     left: 0;
@@ -109,7 +109,7 @@
     transition: all .33s ease;
   }
   
-  .card:before {
+  .card2:before {
     background-position: 50% 50%;
     background-size: 300% 300%;
     background-image: linear-gradient(
@@ -126,7 +126,7 @@
     z-index: 1;
   }
   
-  .card:after {
+  .card2:after {
     opacity: 1;
     background-image: url("https://assets.codepen.io/13471/sparkles.gif"), 
       url(https://assets.codepen.io/13471/holo.png), 
@@ -141,20 +141,20 @@
     opacity: .75;
   }
   
-  .card.active:after,
-  .card:hover:after {
+  .card2.active:after,
+  .card2:hover:after {
     filter: brightness(1) contrast(1);;
     opacity: 1;
   }
   
-  .card.active,
-  .card:hover {
+  .card2.active,
+  .card2:hover {
     animation: none;
     transition: box-shadow 0.1s ease-out;
   }
   
-  .card.active:before,
-  .card:hover:before {
+  .card2.active:before,
+  .card2:hover:before {
     animation: none;
     background-image: linear-gradient(
       110deg,
@@ -170,15 +170,15 @@
     transition: none;
   }
   
-  .card.active:before,
-  .card:hover:before,
-  .card.active:after,
-  .card:hover:after {
+  .card2.active:before,
+  .card2:hover:before,
+  .card2.active:after,
+  .card2:hover:after {
     animation: none;
     transition: none;
   }
   
-  .card.animated {
+  .card2.animated {
     transition: none;
     animation: holoCard 12s ease 0s 1;
     &:before { 
@@ -259,14 +259,14 @@
   
   
   
-  .card.eevee:hover {
+  .card2.eevee:hover {
     box-shadow: 
       0 0 30px -5px white,
       0 0 10px -2px white,
       0 55px 35px -20px rgba(0, 0, 0, 0.5);
   }
-  .card.eevee:hover:before,
-  .card.eevee.active:before {
+  .card2.eevee:hover:before,
+  .card2.eevee.active:before {
     background-image: linear-gradient(
       115deg,
       transparent 20%,
@@ -282,40 +282,40 @@
   
   
   
-  .demo .card {
+  .demo .card2 {
     background-image: var(--back);
     font-size: 2vh
   }
-  .demo .card > span {
+  .demo .card2 > span {
     position: relative;
     top: 45%;
   }
   
-  .demo .card:nth-of-type(1),
-  .demo .card:nth-of-type(2),
-  .demo .card:nth-of-type(3) {
+  .demo .card2:nth-of-type(1),
+  .demo .card2:nth-of-type(2),
+  .demo .card2:nth-of-type(3) {
     width: 20vh;
     height: 27.5vh;
     box-shadow: inset 0 0 0 1px rgba(white,0.4), 0 25px 15px -10px rgba(0, 0, 0, 0.5);
     animation: none;
   }
   
-  .demo .card:nth-of-type(1),
-  .demo .card:nth-of-type(2),
-  .demo .card:nth-of-type(3) {
+  .demo .card2:nth-of-type(1),
+  .demo .card2:nth-of-type(2),
+  .demo .card2:nth-of-type(3) {
     &:before, &:after {
       animation: none;
       // opacity: 1;
     } 
   }
-  .demo .card:nth-of-type(1) {
+  .demo .card2:nth-of-type(1) {
     &:before, &:after { display: none; }
   }
-  .demo .card:nth-of-type(2) {
+  .demo .card2:nth-of-type(2) {
     background: none;
     &:before { display: none; }
   }
-  .demo .card:nth-of-type(3) {
+  .demo .card2:nth-of-type(3) {
     background: none;
     &:after { display: none; }
   }
@@ -331,33 +331,8 @@
   
   
   
-  html, body {
-    height: 100%;
-    background-color: #333844;
-    padding: 0;
-    z-index: 1;
-    transform: translate3d(0,0,0.1px);
-  }
-  body {
-    color: white;
-    background-color: #333844;
-    font-family: "Heebo", sans-serif;
-    text-align: center;
-  }
-  h1 {
-    display: block;
-    margin: 30px 0;
-  }
-  p {
-    margin-top: 5px;
-    font-weight: 200;
-  }
-  #app {
-    position: relative;
-  }
-  
   .demo,
-  .cards { 
+  .card2s { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,7 +348,7 @@
   }
   
   @media screen and (min-width: 600px) {
-    .cards {
+    .card2s {
       flex-direction: row;
     }
   }
@@ -383,7 +358,7 @@
   
   
   
-  .cards .card {
+  .card2s .card2 {
     &:nth-child(2) {
       &, &:before, &:after {
         animation-delay: 0.25s;

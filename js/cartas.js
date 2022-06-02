@@ -7,7 +7,7 @@
   
 */
 var x;
-var $cards = $(".card");
+var $cards = $(".card2");
 var $style = $(".hover");
 
 $cards
@@ -18,12 +18,12 @@ $cards
     if ( e.type === "touchmove" ) {
       pos = [ e.touches[0].clientX, e.touches[0].clientY ];
     }
-    var $card = $(this);
+    var $card2 = $(this);
     // math for mouse position
     var l = pos[0];
     var t = pos[1];
-    var h = $card.height();
-    var w = $card.width();
+    var h = $card2.height();
+    var w = $card2.width();
     var px = Math.abs(Math.floor(100 / w * l)-100);
     var py = Math.abs(Math.floor(100 / h * t)-100);
     var pa = (50-px)+(50-py);
@@ -35,20 +35,20 @@ $cards
     var p_opc = 20+(Math.abs(pa)*1.5);
     var ty = ((tp - 50)/2) * -1;
     var tx = ((lp - 50)/1.5) * .5;
-    // css to apply for active card
+    // css to apply for active card2
     var grad_pos = `background-position: ${lp}% ${tp}%;`
     var sprk_pos = `background-position: ${px_spark}% ${py_spark}%;`
     var opc = `opacity: ${p_opc/100};`
     var tf = `transform: rotateX(${ty}deg) rotateY(${tx}deg)`
     // need to use a <style> tag for psuedo elements
     var style = `
-      .card:hover:before { ${grad_pos} }  /* gradient */
-      .card:hover:after { ${sprk_pos} ${opc} }   /* sparkles */ 
+      .card2:hover:before { ${grad_pos} }  /* gradient */
+      .card2:hover:after { ${sprk_pos} ${opc} }   /* sparkles */ 
     `
     // set / apply css class and style
     $cards.removeClass("active");
-    $card.removeClass("animated");
-    $card.attr( "style", tf );
+    $card2.removeClass("animated");
+    $card2.attr( "style", tf );
     $style.html(style);
     if ( e.type === "touchmove" ) {
       return false; 
@@ -56,10 +56,10 @@ $cards
     clearTimeout(x);
   }).on("mouseout touchend touchcancel", function() {
     // remove css, apply custom animation on end
-    var $card = $(this);
+    var $card2 = $(this);
     $style.html("");
-    $card.removeAttr("style");
+    $card2.removeAttr("style");
     x = setTimeout(function() {
-      $card.addClass("animated");
+      $card2.addClass("animated");
     },2500);
   });
