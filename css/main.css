@@ -217,16 +217,16 @@ nav {
   --mewtwofront: url(../img/cartabruja.png);
   --bufon1: rgb(173, 255, 170);
   --bufon2: #d49bee;
-  --bufonfront: url(../img/cartabufon.png);
+  --bufonfront: url(../img/cartabufon.webp);
   --gangster1: #54a29e;
   --gangster2: #66a3a7;
-  --gangsterfront: url(../img/cartagangster.png);
+  --gangsterfront: url(../img/cartagangster.webp);
   --sibila1: #fbb2df;
   --sibila2: #daacf8;
-  --sibilafront: url(../img/cartasibila.png);
+  --sibilafront: url(../img/cartasibila.webp);
   --bruja1: #fbb2be;
   --bruja2: #dcacf8;
-  --brujafront: url(../img/cartabruja.png); }
+  --brujafront: url(../img/cartabruja.webp); }
 
 .card2 {
   width: 61vw;
