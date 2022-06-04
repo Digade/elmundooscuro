@@ -17,15 +17,33 @@
     --bufon1: rgb(173, 255, 170);
     --bufon2: #d49bee;
     --bufonfront: url(../img/cartabufon.webp);
+    --bufon-roba1: rgb(170, 238, 255);
+    --bufon-roba2: #ee9b9b;
+    --bufon-robafront: url(../img/cartabufon-roba.webp);
     --gangster1: #54a29e;
     --gangster2: #66a3a7;
     --gangsterfront: url(../img/cartagangster.webp);
+    --gangster-51: #a25454;
+    --gangster-52: #a79666;
+    --gangster-5front: url(../img/cartagangster-limitada.webp);
     --sibila1: #fbb2df;
     --sibila2: #daacf8;
     --sibilafront: url(../img/cartasibila.webp);
+    --sibila-oscura1: #fbb2b2;
+    --sibila-oscura2: #838383;
+    --sibila-oscurafront: url(../img/cartasibila-oscura.webp);
     --bruja1: #fbb2be;
     --bruja2: #dcacf8;
     --brujafront: url(../img/cartabruja.webp);
+    --bruja-oscura1: #fbb2be;
+    --bruja-oscura2: #868686;
+    --bruja-oscurafront: url(../img/cartabruja-mitad.webp);
+    --pope1: #befbb2;
+    --pope2: #78df97;
+    --popefront: url(../img/cartapope-utiliza.webp);
+    --dark-pope1: #d8a1fc;
+    --dark-pope2: #a676c2;
+    --dark-popefront: url(../img/cartapope-cancela.webp);
   }
   
   
@@ -115,12 +133,24 @@
     --color2: var(--bufon2);
     --front: var(--bufonfront);
   }
+
+  .card2.bufon-roba {
+    --color1: var(--bufon-roba1);
+    --color2: var(--bufon-roba2);
+    --front: var(--bufon-robafront);
+  }
   
   
   .card2.gangster {
     --color1: var(--gangster1);
     --color2: var(--gangster2);
     --front: var(--gangsterfront);
+  }
+  
+  .card2.gangster-5 {
+    --color1: var(--gangster-51);
+    --color2: var(--gangster-52);
+    --front: var(--gangster-5front);
   }
   
   
@@ -130,6 +160,12 @@
     --front: var(--sibilafront);
   }
   
+  .card2.sibila-oscura {
+    --color1: var(--sibila-oscura1);
+    --color2: var(--sibila-oscura2);
+    --front: var(--sibila-oscurafront);
+  }
+  
   
   .card2.bruja {
     --color1: var(--bruja1);
@@ -137,6 +173,12 @@
     --front: var(--brujafront);
   }
   
+  .card2.bruja-oscura {
+    --color1: var(--bruja1);
+    --color2: var(--bruja2);
+    --front: var(--bruja-oscurafront);
+  }
+
   .card2:before,
   .card2:after {
     content: "";
