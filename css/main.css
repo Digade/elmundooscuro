@@ -827,7 +827,7 @@ footer {
     align-items: center; }
   .cont-pjs, .cont-pjs-k {
     flex-direction: row;
-    height: 50vh;
+    height: 47vh;
     justify-content: center;
     align-items: center;
     /* justify-content: space-evenly; */
