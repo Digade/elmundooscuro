@@ -203,18 +203,6 @@ nav {
   --color1: rgb(0, 231, 255);
   --color2: rgb(255, 0, 231);
   --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
-  --charizard1: #fac;
-  --charizard2: #ddccaa;
-  --charizardfront: url(../img/cartabufon.png);
-  --pika1: #54a29e;
-  --pika2: #a79d66;
-  --pikafront: url(../img/cartagangster.png);
-  --eevee1: #efb2fb;
-  --eevee2: #acc6f8;
-  --eeveefront: url(../img/cartasibila.png);
-  --mewtwo1: #efb2fb;
-  --mewtwo2: #acc6f8;
-  --mewtwofront: url(../img/cartabruja.png);
   --bufon1: rgb(173, 255, 170);
   --bufon2: #d49bee;
   --bufonfront: url(../img/cartabufon.webp);
@@ -242,9 +230,39 @@ nav {
   --pope1: #befbb2;
   --pope2: #78df97;
   --popefront: url(../img/cartapope-utiliza.webp);
-  --dark-pope1: #d8a1fc;
-  --dark-pope2: #a676c2;
-  --dark-popefront: url(../img/cartapope-cancela.webp); }
+  --darkpope1: #d8a1fc;
+  --darkpope2: #a676c2;
+  --darkpopefront: url(../img/cartapope-cancela.webp);
+  --senadores-paola1: #ffe18e;
+  --senadores-paola2: #fca1a1;
+  --senadores-paolafront: url(../img/cartasenadores-paola.webp);
+  --senadores-abel1: #eedd80;
+  --senadores-abel2: #f8a46b;
+  --senadores-abelfront: url(../img/cartasenadores-abel.webp);
+  --emperador1: #fca1a1;
+  --emperador2: #f04d4d;
+  --emperadorfront: url(../img/cartaemperador.webp);
+  --emperador-oscuro1: #8f8f8f;
+  --emperador-oscuro2: #a1aafc;
+  --emperador-oscurofront: url(../img/cartaemperador-oscuro.webp);
+  --emperatriz1: #e77286;
+  --emperatriz2: #ad6972;
+  --emperatrizfront: url(../img/cartaemperatriz.webp);
+  --emperatriz-oscura1: #b1b1b1;
+  --emperatriz-oscura2: #ba88db;
+  --emperatriz-oscurafront: url(../img/cartaemperatriz-oscura.webp);
+  --cain1: #8d94ce;
+  --cain2: #ece57f;
+  --cainfront: url(../img/cartacain.webp);
+  --cain-oscuro1: #fca1a1;
+  --cain-oscuro2: #8f8f8f;
+  --cain-oscurofront: url(../img/cartascain-oscura.webp);
+  --lilith1: #d8a1fc;
+  --lilith2: #fceba1;
+  --lilithfront: url(../img/cartalilith.webp);
+  --lilith-oscura1: #7d668d;
+  --lilith-oscura2: #ad6262;
+  --lilith-oscurafront: url(../img/cartalilith-oscura.webp); }
 
 .card2 {
   width: 61vw;
@@ -272,26 +290,6 @@ nav {
 
 .card2:hover {
   box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5); }
-
-.card2.charizard {
-  --color1: var(--charizard1);
-  --color2: var(--charizard2);
-  --front: var(--charizardfront); }
-
-.card2.pika {
-  --color1: var(--pika1);
-  --color2: var(--pika2);
-  --front: var(--pikafront); }
-
-.card2.mewtwo {
-  --color1: var(--mewtwo1);
-  --color2: var(--mewtwo2);
-  --front: var(--mewtwofront); }
-
-.card2.eevee {
-  --color1: #ec9bb6;
-  --color2: #ccac6f;
-  --front: var(--eeveefront); }
 
 .card2.bufon {
   --color1: var(--bufon1);
@@ -332,6 +330,66 @@ nav {
   --color1: var(--bruja1);
   --color2: var(--bruja2);
   --front: var(--bruja-oscurafront); }
+
+.card2.pope {
+  --color1: var(--pope1);
+  --color2: var(--pope2);
+  --front: var(--popefront); }
+
+.card2.darkpope {
+  --color1: var(--darkpope1);
+  --color2: var(--darkpope2);
+  --front: var(--darkpopefront); }
+
+.card2.senadores-paola {
+  --color1: var(--senadores-paola1);
+  --color2: var(--senadores-paola2);
+  --front: var(--senadores-paolafront); }
+
+.card2.senadores-abel {
+  --color1: var(--senadores-abel1);
+  --color2: var(--senadores-abel2);
+  --front: var(--senadores-abelfront); }
+
+.card2.emperador {
+  --color1: var(--emperador1);
+  --color2: var(--emperador2);
+  --front: var(--emperadorfront); }
+
+.card2.emperador-oscuro {
+  --color1: var(--emperador-oscuro1);
+  --color2: var(--emperador-oscuro2);
+  --front: var(--emperador-oscurofront); }
+
+.card2.emperatriz {
+  --color1: var(--emperatriz1);
+  --color2: var(--emperatriz2);
+  --front: var(--emperatrizfront); }
+
+.card2.emperatriz-oscura {
+  --color1: var(--emperatriz-oscura1);
+  --color2: var(--emperatriz-oscura2);
+  --front: var(--emperatriz-oscurafront); }
+
+.card2.cain {
+  --color1: var(--cain1);
+  --color2: var(--cain2);
+  --front: var(--cainfront); }
+
+.card2.cain-oscuro {
+  --color1: var(--cain-oscuro1);
+  --color2: var(--cain-oscuro2);
+  --front: var(--cain-oscurofront); }
+
+.card2.lilith {
+  --color1: var(--lilith1);
+  --color2: var(--lilith2);
+  --front: var(--lilithfront); }
+
+.card2.lilith-oscura {
+  --color1: var(--lilith-oscura1);
+  --color2: var(--lilith-oscura2);
+  --front: var(--lilith-oscurafront); }
 
 .card2:before,
 .card2:after {
@@ -666,6 +724,11 @@ main {
   background-image: radial-gradient(circle, #b99700 10%, #580000 35%, black 70%);
   opacity: .75; }
 
+.cont-pjs-a-b:before {
+  background-attachment: fixed;
+  background-image: radial-gradient(circle, #746a15 10%, #013304 35%, black 70%);
+  opacity: .75; }
+
 .cont-pjs-10-10:before {
   background-attachment: fixed;
   background-image: radial-gradient(circle, #b37a00 10%, #3f260e, black 70%);
@@ -681,6 +744,11 @@ main {
   background-image: radial-gradient(circle, red, #300000 35%, black 70%);
   opacity: .75; }
 
+.cont-pjs-j-j-b:before {
+  background-attachment: fixed;
+  background-image: radial-gradient(circle, #345177, #0e0d0d 35%, black 70%);
+  opacity: .75; }
+
 .cont-pjs-q-q:before {
   background-attachment: fixed;
   background-image: radial-gradient(circle, #ff2566, #3f0000 35%, black 70%);
@@ -688,12 +756,17 @@ main {
 
 .cont-pjs-k-k:before {
   background-attachment: fixed;
-  background-image: radial-gradient(circle, #c5a800, #06002b 35%, black 70%);
+  background-image: radial-gradient(circle, #c58700, #06002b 35%, black 70%);
   opacity: .75; }
 
 .cont-pjs-a-a:before {
   background-attachment: fixed;
   background-image: radial-gradient(circle, #cc7a00, #0e0016 40%, #020008 70%);
+  opacity: .75; }
+
+.cont-pjs-a-a-b:before {
+  background-attachment: fixed;
+  background-image: radial-gradient(circle, #583a66, #410303 40%, #020008 70%);
   opacity: .75; }
 
 /* FIN colores de los fondos por personaje */
