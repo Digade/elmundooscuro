@@ -721,7 +721,7 @@ main {
 
 .cont-pjs-a:before {
   background-attachment: fixed;
-  background-image: radial-gradient(circle, #b99700 10%, #580000 35%, black 70%);
+  background-image: radial-gradient(circle, #695705, #8a4505, #580000 35%, black 70%);
   opacity: .75; }
 
 .cont-pjs-a-b:before {
@@ -746,7 +746,7 @@ main {
 
 .cont-pjs-j-j-b:before {
   background-attachment: fixed;
-  background-image: radial-gradient(circle, #345177, #0e0d0d 35%, black 70%);
+  background-image: radial-gradient(circle, #164c70, #193347, #111a46 35%, black 70%);
   opacity: .75; }
 
 .cont-pjs-q-q:before {
@@ -756,7 +756,7 @@ main {
 
 .cont-pjs-k-k:before {
   background-attachment: fixed;
-  background-image: radial-gradient(circle, #c58700, #06002b 35%, black 70%);
+  background-image: radial-gradient(circle, #855f0e, #06002b 35%, black 70%);
   opacity: .75; }
 
 .cont-pjs-a-a:before {
@@ -766,7 +766,7 @@ main {
 
 .cont-pjs-a-a-b:before {
   background-attachment: fixed;
-  background-image: radial-gradient(circle, #583a66, #410303 40%, #020008 70%);
+  background-image: radial-gradient(circle, #2d3050, #3a2644, #2c0404 35%, #020008 70%);
   opacity: .75; }
 
 /* FIN colores de los fondos por personaje */
