@@ -16,7 +16,9 @@
   color: #dac274; }
 
 .botonh {
-  margin-top: 00px; }
+  margin-top: 0px;
+  width: 50px;
+  height: 24px; }
 
 img {
   transition-property: all;
@@ -728,17 +730,17 @@ main {
 
 .cont-pjs-q-j:before {
   background-attachment: fixed;
-  background-image: radial-gradient(circle, #9f49a7, #530041, #160016 35%, #010008 70%);
+  background-image: radial-gradient(circle, #9f49a7 10%, #530041, #160016 35%, #010008 70%);
   opacity: .75; }
 
 .cont-pjs-k:before {
   background-attachment: fixed;
-  background-image: radial-gradient(circle, #ff1b1b, #530000, #000216 35%, #010008 70%);
+  background-image: radial-gradient(circle, #ff1b1b 10%, #530000, #000216 35%, #010008 70%);
   opacity: .75; }
 
 .cont-pjs-a:before {
   background-attachment: fixed;
-  background-image: radial-gradient(circle, #695705, #8a4505, #580000 35%, black 70%);
+  background-image: radial-gradient(circle, #695705 10%, #8a4505, #580000 35%, black 70%);
   opacity: .75; }
 
 .cont-pjs-a-b:before {
@@ -869,12 +871,21 @@ footer {
   margin-top: 100px; }
 
 @media screen and (max-width: 415px) {
+  .botonh {
+    margin-top: 0px;
+    width: 100px;
+    height: 47px; }
   .pj-pc {
     display: none; }
   .infomain {
     padding: 60px 25px 60px 25px; }
     .infomain div {
-      margin: 10px 0 10px 0; } }
+      margin: 10px 0 10px 0; }
+  .infoback-pag {
+    padding: 30px; }
+  .padding30 {
+    padding: 30px 0 30px;
+    margin: 0 30px 0; } }
 
 @media screen and (min-width: 768px) {
   .pj-cel {
