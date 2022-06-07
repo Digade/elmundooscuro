@@ -207,7 +207,7 @@ nav {
   /*/ ⭐️ To encode your own SVG as a data URI, use jakob-e’s super helpful CodePen: “Encode SVG SCSS” https://codepen.io/jakob-e/pen/doMoML */
   background-image: url("../img/pattern/pattern4.png");
   content: '';
-  opacity: 0.3; }
+  opacity: 0.2; }
 
 .sliderlinea {
   width: 90%;
