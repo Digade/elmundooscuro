@@ -855,7 +855,7 @@ footer {
   .pj-pc {
     display: none; }
   .infomain {
-    padding: 60px 0 60px 0; }
+    padding: 60px 25px 60px 25px; }
     .infomain div {
       margin: 10px 0 10px 0; } }
 
@@ -876,7 +876,7 @@ footer {
     margin-bottom: 0;
     visibility: visible; }
   .slidermain {
-    height: 60vh;
+    height: 80%;
     padding: 100px;
     font-family: 'Play', sans-serif; }
     .slidermain h1 {
