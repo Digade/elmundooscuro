@@ -9,7 +9,7 @@
 
 .slidermain {
     
-    background-image: url(../img/banner.webp) ;
+    background-image: url(../img/banner.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -29,6 +29,15 @@
         line-height: 0.75;
         text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px rgb(218, 194, 116), 0 0 50px black, 1px 1px 4px black;
         margin: 50px 0px 50px 0px;
+        z-index: 999;
+        }
+
+        h2{
+            z-index: 999;
+        }
+
+        img{
+            z-index: 999;
         }
 
         h6 {
@@ -37,9 +46,23 @@
             font-weight: 100;
             text-align: left;
             @extend .color-sec;
+            z-index: 999;
         }
     
 }
+
+.slidermain::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*/ ⭐️ To encode your own SVG as a data URI, use jakob-e’s super helpful CodePen: “Encode SVG SCSS” https://codepen.io/jakob-e/pen/doMoML */
+    background-image: url('../img/pattern/pattern4.png');
+    content: '';
+    opacity: 0.3;
+  }
 
 .sliderlinea {
     width: 90%; 
