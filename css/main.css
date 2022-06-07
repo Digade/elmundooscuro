@@ -102,7 +102,7 @@ header div {
   font-display: swap; }
 
 nav {
-  z-index: 3; }
+  z-index: 1000; }
 
 .contenedor {
   /* clases de flexbox */
@@ -204,7 +204,6 @@ nav {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  /*/ ⭐️ To encode your own SVG as a data URI, use jakob-e’s super helpful CodePen: “Encode SVG SCSS” https://codepen.io/jakob-e/pen/doMoML */
   background-image: url("../img/pattern/pattern4.png");
   content: '';
   opacity: 0.2; }
@@ -885,7 +884,9 @@ footer {
   .navbar-nav {
     margin-top: 0px; }
   .botonh {
-    margin-top: 0px; }
+    margin-top: 0px;
+    width: 100px;
+    height: 47px; }
   .logo {
     margin: 0; }
   .menu {
