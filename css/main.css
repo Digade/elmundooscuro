@@ -173,7 +173,7 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 80vh;
+  height: 95%;
   position: relative;
   padding: 40px;
   background-color: black;
@@ -876,7 +876,7 @@ footer {
     margin-bottom: 0;
     visibility: visible; }
   .slidermain {
-    height: 80%;
+    height: 800px;
     padding: 100px;
     font-family: 'Play', sans-serif; }
     .slidermain h1 {
