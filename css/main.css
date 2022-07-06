@@ -9,16 +9,14 @@
   font-family: 'Play', sans-serif;
   font-weight: 200; }
 
-.font-philo, input, h3, h2, h1, .slidermain h1, .noti1 h4, .h4form {
+.font-philo, input, h3, h2, h1, .slidermain h1, .seomain h3, .noti1 h4, .h4form {
   font-family: 'Philosopher', sans-serif; }
 
 .color-sec, .slidermain h6, .contactomain ul li a:hover, .contactomain ul li a:active, .ayudacont h6, .footer-list p, .footer-list a:hover {
   color: #dac274; }
 
 .botonh {
-  margin-top: 0px;
-  width: 50px;
-  height: 24px; }
+  margin-top: 00px; }
 
 img {
   transition-property: all;
@@ -218,6 +216,35 @@ nav {
 .videomain {
   width: 100%;
   height: 55.25vw; }
+
+.seomain {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 900px !important;
+  position: relative;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  image-orientation: inherit;
+  display: grid;
+  grid-column: 4fr;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start; }
+  .seomain .texto-main {
+    width: 520px;
+    padding: 40px; }
+  .seomain h3 {
+    text-align: left;
+    line-height: 0.75;
+    text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px #dac274, 0 0 50px black, 1px 1px 4px black;
+    margin: 50px 0px 50px 0px;
+    z-index: 999; }
+  .seomain .positioncard {
+    right: 100px;
+    top: 50px; }
 
 :root {
   --color1: rgb(0, 231, 255);
@@ -886,7 +913,29 @@ footer {
     padding: 30px; }
   .padding30 {
     padding: 30px 0 30px;
-    margin: 0 30px 0; } }
+    margin: 0 30px 0; }
+  .seomain {
+    display: grid;
+    height: 90% !important;
+    grid-column: 4fr;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start; }
+    .seomain .texto-main {
+      width: 300px;
+      padding: 15px 15px 50px 15px; }
+    .seomain .positioncard {
+      bottom: 0px;
+      top: -200px;
+      right: -20px; }
+    .seomain .positioncard2 {
+      bottom: 0px;
+      top: 0px;
+      right: 20px; }
+  .rev1 {
+    flex-direction: row-reverse; }
+  .he300 {
+    height: 300px; } }
 
 @media screen and (min-width: 768px) {
   .pj-cel {

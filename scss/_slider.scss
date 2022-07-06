@@ -73,3 +73,45 @@
     width: 100%;
     height: 55.25vw;
 }
+
+.seomain {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 900px !important;
+    // width: 100vh;
+    position: relative;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    image-orientation: inherit;
+    display: grid;
+    
+            
+    
+    grid-column: 4fr;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start; 
+    
+    .texto-main{
+        width: 520px;
+        padding: 40px;
+    }
+    
+    h3{
+        @extend .font-philo;
+        // font-size: 70px;
+        text-align: left;
+        line-height: 0.75;
+        text-shadow: 2px 2px 4px #9b9b9b, 0 0 10px rgb(218, 194, 116), 0 0 50px black, 1px 1px 4px black;
+        margin: 50px 0px 50px 0px;
+        z-index: 999;
+        }
+
+    .positioncard {
+        right: 100px;
+        top: 50px;
+    }
+}
