@@ -32,14 +32,15 @@
     }
 
     .seomain {
-        display: grid;
+        display: row;
         height: 90% !important;
             
     
-        grid-column: 4fr;
-        justify-content: center;
-        align-content: center;
-        align-items: flex-start; 
+        
+        justify-content: center ;
+        align-content: center !important;
+        align-items: flex-start ; 
+        padding: 75px 40px 75px 40px;
         .texto-main{
             width: 300px;
             padding: 15px 15px 50px 15px;
