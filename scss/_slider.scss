@@ -110,4 +110,13 @@
         right: 100px;
         top: 50px;
     }
+
+    p {
+        @extend .font-play;
+        font-size: 5px !important;
+        font-weight: 100;
+        text-align: left;
+        @extend .color-sec;
+        z-index: 999; 
+    }
 }
