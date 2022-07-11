@@ -113,10 +113,10 @@
 
     p {
         @extend .font-play;
-        font-size: 5px !important;
+        font-size: 21px !important;
         font-weight: 100;
         text-align: left;
-        @extend .color-sec;
+        // @extend .color-sec;
         z-index: 999; 
     }
 }

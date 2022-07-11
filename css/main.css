@@ -5,7 +5,7 @@
 .display-cel {
   display: none; }
 
-.font-play, label, p, h6, h5, h4, .card-body h3, .slidermain h2, .navmain, .slidermain h6, .contactomain {
+.font-play, label, p, h6, h5, h4, .card-body h3, .slidermain h2, .navmain, .slidermain h6, .seomain p, .contactomain {
   font-family: 'Play', sans-serif;
   font-weight: 200; }
 
@@ -243,6 +243,11 @@ nav {
   .seomain .positioncard {
     right: 100px;
     top: 50px; }
+  .seomain p {
+    font-size: 21px !important;
+    font-weight: 100;
+    text-align: left;
+    z-index: 999; }
 
 :root {
   --color1: rgb(0, 231, 255);
