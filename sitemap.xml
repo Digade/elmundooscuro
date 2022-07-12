@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>https://elmundooscuro.com.ar/index.html/</loc>
+
+      <lastmod>2022-07-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://elmundooscuro.com.ar/paginas/cartas.html</loc>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>https://elmundooscuro.com.ar/paginas/tutorial.html</loc>
+
+      <lastmod>2022-07-11</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>https://elmundooscuro.com.ar/paginas/tienda.html</loc>
+
+      <lastmod>2022-07-11</lastmod>
+
+      <priority>0.3</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://elmundooscuro.com.ar/paginas/contacto.html</loc>
+
+      <lastmod>2022-07-11</lastmod>
+
+   </url>
+
+</urlset>
